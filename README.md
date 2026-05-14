@@ -19,7 +19,7 @@
 
 ## 구현 계획
 - 공공데이터 OpenAPI로 데이터 수집
-- Kafka Connector로 HDFS에 저장
+- Kafka로 수집 데이터를 스트리밍하고 Kafka Connect HDFS Sink Connector로 HDFS에 저장
 - Hive로 데이터 적재 및 분석용 테이블 구성
 - Spark로 대용량 관광 데이터 전처리 및 집계 분석
 - scikit-learn으로 관광지 인기/이동 패턴 모델링

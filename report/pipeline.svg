@@ -1,0 +1,68 @@
+<svg viewBox="0 0 1180 372" xmlns="http://www.w3.org/2000/svg" role="img" font-family="'Malgun Gothic','Apple SD Gothic Neo','Noto Sans KR',sans-serif">
+  <title>빅데이터 처리·분석 파이프라인</title>
+  <desc>데이터 수집(한국관광공사 OpenAPI, Python) → 데이터 적재(HDFS, CSV·JSON) → 전처리·분석(Hive HiveQL, Spark) → 시각화(matplotlib, folium)</desc>
+  <defs>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#0B4A52" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <text x="590" y="36" text-anchor="middle" font-size="23" font-weight="700" fill="#0B4A52">빅데이터 처리·분석 파이프라인</text>
+
+  <!-- arrows between stages -->
+  <g fill="#0E7C86">
+    <polygon points="278,184 306,199 278,214"/>
+    <polygon points="568,184 596,199 568,214"/>
+    <polygon points="858,184 886,199 858,214"/>
+  </g>
+
+  <!-- Stage 1: 데이터 수집 -->
+  <g>
+    <rect x="20" y="72" width="250" height="252" rx="16" fill="#E7F2F3" stroke="#CFE3E5" stroke-width="1" filter="url(#cardShadow)"/>
+    <circle cx="58" cy="112" r="19" fill="#0E7C86"/>
+    <text x="58" y="119" text-anchor="middle" font-size="20" font-weight="700" fill="#FFFFFF">1</text>
+    <text x="86" y="119" font-size="19" font-weight="700" fill="#0B4A52">데이터 수집</text>
+    <rect x="44" y="150" width="202" height="56" rx="11" fill="#0E7C86"/>
+    <text x="145" y="184" text-anchor="middle" font-size="16" font-weight="600" fill="#FFFFFF">한국관광공사 OpenAPI</text>
+    <rect x="44" y="216" width="202" height="56" rx="11" fill="#FFFFFF" stroke="#0E7C86" stroke-width="2"/>
+    <text x="145" y="250" text-anchor="middle" font-size="17" font-weight="600" fill="#0B4A52">Python</text>
+  </g>
+
+  <!-- Stage 2: 데이터 적재 -->
+  <g>
+    <rect x="310" y="72" width="250" height="252" rx="16" fill="#E7F2F3" stroke="#CFE3E5" stroke-width="1" filter="url(#cardShadow)"/>
+    <circle cx="348" cy="112" r="19" fill="#0E7C86"/>
+    <text x="348" y="119" text-anchor="middle" font-size="20" font-weight="700" fill="#FFFFFF">2</text>
+    <text x="376" y="119" font-size="19" font-weight="700" fill="#0B4A52">데이터 적재</text>
+    <rect x="334" y="150" width="202" height="56" rx="11" fill="#0E7C86"/>
+    <text x="435" y="184" text-anchor="middle" font-size="17" font-weight="600" fill="#FFFFFF">HDFS</text>
+    <rect x="334" y="216" width="202" height="56" rx="11" fill="#FFFFFF" stroke="#0E7C86" stroke-width="2"/>
+    <text x="435" y="250" text-anchor="middle" font-size="17" font-weight="600" fill="#0B4A52">CSV · JSON</text>
+  </g>
+
+  <!-- Stage 3: 전처리·분석 -->
+  <g>
+    <rect x="600" y="72" width="250" height="252" rx="16" fill="#E7F2F3" stroke="#CFE3E5" stroke-width="1" filter="url(#cardShadow)"/>
+    <circle cx="638" cy="112" r="19" fill="#0E7C86"/>
+    <text x="638" y="119" text-anchor="middle" font-size="20" font-weight="700" fill="#FFFFFF">3</text>
+    <text x="666" y="119" font-size="19" font-weight="700" fill="#0B4A52">전처리·분석</text>
+    <rect x="624" y="150" width="202" height="56" rx="11" fill="#0E7C86"/>
+    <text x="725" y="184" text-anchor="middle" font-size="17" font-weight="600" fill="#FFFFFF">Hive (HiveQL)</text>
+    <rect x="624" y="216" width="202" height="56" rx="11" fill="#FFFFFF" stroke="#0E7C86" stroke-width="2"/>
+    <text x="725" y="250" text-anchor="middle" font-size="17" font-weight="600" fill="#0B4A52">Spark</text>
+  </g>
+
+  <!-- Stage 4: 시각화 -->
+  <g>
+    <rect x="890" y="72" width="250" height="252" rx="16" fill="#E7F2F3" stroke="#CFE3E5" stroke-width="1" filter="url(#cardShadow)"/>
+    <circle cx="928" cy="112" r="19" fill="#0E7C86"/>
+    <text x="928" y="119" text-anchor="middle" font-size="20" font-weight="700" fill="#FFFFFF">4</text>
+    <text x="956" y="119" font-size="19" font-weight="700" fill="#0B4A52">시각화</text>
+    <rect x="914" y="150" width="202" height="56" rx="11" fill="#0E7C86"/>
+    <text x="1015" y="184" text-anchor="middle" font-size="17" font-weight="600" fill="#FFFFFF">matplotlib</text>
+    <rect x="914" y="216" width="202" height="56" rx="11" fill="#FFFFFF" stroke="#0E7C86" stroke-width="2"/>
+    <text x="1015" y="250" text-anchor="middle" font-size="17" font-weight="600" fill="#0B4A52">folium</text>
+  </g>
+
+  <text x="590" y="352" text-anchor="middle" font-size="13" fill="#5B7480">실행 환경: GCP 인스턴스 · HDP Sandbox (HDFS · Hive 3.1 · Spark 2.3)</text>
+</svg>

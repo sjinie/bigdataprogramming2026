@@ -1,0 +1,7 @@
+# 수집
+requests>=2.20
+
+# 시각화 (선택) — 지도/차트
+folium                 # folium 지도(map_folium.html)
+matplotlib             # 차트(PNG). 라벨이 영어/로마자라 한글 폰트 불필요
+numpy

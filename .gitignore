@@ -1,0 +1,10 @@
+data/
+!data/.gitkee
+.env
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+results/figures/*
+!results/figures/.gitkeep
+*.log
